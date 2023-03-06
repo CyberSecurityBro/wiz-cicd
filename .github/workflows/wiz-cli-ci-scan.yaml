@@ -15,11 +15,11 @@ jobs:
       SCAN_PATH_FAIL: "container-fail"
       IMAGE: setestimage
       TAG: latest
-      IAC_POLICY: "iac-fail-medium" # Set the desired Wiz-cli policy to use
-      VULN_POLICIES: "vuln-one-medium"
+      IAC_POLICY: "herrera-iac" # Set the desired Wiz-cli policy to use
+      VULN_POLICIES: "herrera-vuln-high"
       WIZ_CLIENT_ID: ${{ secrets.WIZ_CLIENT_ID }}
       WIZ_CLIENT_SECRET: ${{ secrets.WIZ_CLIENT_SECRET }}
-      WIZ_ENV: ${{ secrets.WIZ_ENV }}
+      # WIZ_ENV: ${{ secrets.WIZ_ENV }}
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
